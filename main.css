@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Leckerli+One);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+  body {
+    background-color: #181510;
+    color: #FCE4FB;
+    font-family: 'Leckerli One', cursive;
+    font-size: 100px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+    .text {
+      color: #fff;
+      -webkit-animation: lightOn 1.5s ease-in-out infinite alternate;
+      -moz-animation: lightOn 1.5s ease-in-out infinite alternate;
+      animation: lightOn 1.5s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes lightOn {
+    from {
+      text-shadow: 0 0 20px #FCE4FB, 0 0 30px #FCE4FB, 0 0 40px #EC008C, 0 0 50px #B56270, 0 0 60px #EC008C, 0 0 70px #B56270, 0 0 100px #EC008C, 0 0 150px #B56270;
+    }
+    to {
+      text-shadow: 0 0 5px #FCE4FB, 0 0 10px #FCE4FB, 0 0 15px #EC008C, 0 0 20px #B56270, 0 0 35px #EC008C, 0 0 40px #B56270, 0 0 50px #EC008C, 0 0 75px #B56270;
+    }
+  }
