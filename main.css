@@ -29,6 +29,7 @@
       -moz-animation: lightOn 1.5s ease-in-out infinite alternate;
       animation: lightOn 1.5s ease-in-out infinite alternate;
     }
+/*on light*/
 
     @-webkit-keyframes lightOn {
     from {
