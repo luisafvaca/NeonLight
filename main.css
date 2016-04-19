@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Leckerli+One);
 
+:root {
+  --wisp-pink-color: #FCE4FB;
+  --hollywood-color: #EC008C;
+  --tapestry-color: #B56270;
+  --zeus-color: #181510;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +15,7 @@
 }
 
   body {
-    background-color: #181510;
-    color: #FCE4FB;
+    background-color: var(--zeus-color);
     font-family: 'Leckerli One', cursive;
     font-size: 100px;
   }
@@ -26,15 +32,28 @@
     .text {
       color: #fff;
       -webkit-animation: lightOn 1.5s ease-in-out infinite alternate;
-      -moz-animation: lightOn 1.5s ease-in-out infinite alternate;
       animation: lightOn 1.5s ease-in-out infinite alternate;
     }
 
-    @-webkit-keyframes lightOn {
+    @keyframes lightOn {
     from {
-      text-shadow: 0 0 20px #FCE4FB, 0 0 30px #FCE4FB, 0 0 40px #EC008C, 0 0 50px #B56270, 0 0 60px #EC008C, 0 0 70px #B56270, 0 0 100px #EC008C, 0 0 150px #B56270;
+      text-shadow: 0 0 20px var(--wisp-pink-color),
+        0 0 30px var(--wisp-pink-color),
+        0 0 40px var(--hollywood-color),
+        0 0 50px var(--tapestry-color),
+        0 0 60px var(--hollywood-color),
+        0 0 70px var(--tapestry-color),
+        0 0 100px var(--hollywood-color),
+        0 0 150px var(--tapestry-color);
     }
     to {
-      text-shadow: 0 0 5px #FCE4FB, 0 0 10px #FCE4FB, 0 0 15px #EC008C, 0 0 20px #B56270, 0 0 35px #EC008C, 0 0 40px #B56270, 0 0 50px #EC008C, 0 0 75px #B56270;
+      text-shadow: 0 0 5px var(--wisp-pink-color),
+        0 0 10px var(--wisp-pink-color),
+        0 0 15px var(--hollywood-color),
+        0 0 20px var(--tapestry-color),
+        0 0 35px var(--hollywood-color),
+        0 0 40px var(--tapestry-color),
+        0 0 50px var(--hollywood-color),
+        0 0 75px var(--tapestry-color);
     }
   }
